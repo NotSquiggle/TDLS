@@ -1,35 +1,63 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
+    line-height: 1.6;
 }
 
+/* Header */
 header {
-    background: #007acc;
+    background-color: #1f4e79;
     color: white;
-    padding: 20px;
     text-align: center;
+    padding: 20px;
+    border-bottom: 4px solid #ffcc00;
 }
 
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+/* Main Section */
 main {
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
     background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
     border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#question {
-    font-size: 1.2em;
-    margin-bottom: 10px;
+/* Test Section */
+.test {
+    text-align: center;
 }
 
+h2 {
+    background-color: #007acc;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.question {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+/* Button */
 button {
-    display: block;
-    margin: 20px auto;
+    display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
     background-color: #007acc;
@@ -37,20 +65,23 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
     background-color: #005a99;
 }
 
-.hidden {
-    display: none;
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 10px;
-    background: #007acc;
+    background-color: #1f4e79;
     color: white;
+    margin-top: 20px;
 }
